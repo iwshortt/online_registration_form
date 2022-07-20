@@ -1,0 +1,170 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: 'Merriweather', serif;
+    line-height: 2.2rem;
+}
+header,
+main {
+    max-width: 90vw;
+    margin: 0 auto;
+}
+label,
+p {
+    font-weight: 300;
+    color: rgb(125, 125, 125);
+}
+
+/* Nav Styles */
+nav {
+    margin: 0;
+    padding: 20px 40px;
+    color: #fff;
+    background-color: rgb(46, 46, 65);
+    text-align: center;
+}
+h1 {
+    text-transform: uppercase;
+}
+
+/* Header Styles */
+header {
+    padding: 13px 0 5px;
+    text-align: center;
+    border-bottom: 3px solid rgb(27, 27, 38); 
+}
+.header-border {
+    border-bottom: 7px solid rgb(27, 27, 38);
+}
+/* h2 {
+
+}
+.header-para {
+
+} */
+
+/* Main Styles */
+fieldset {
+    padding: 0;
+    border: 0;
+}
+fieldset:first-child {
+    margin: 35px 5px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 3px solid rgb(27, 27, 38);
+}
+fieldset:first-child label,
+fieldset:last-child label {
+    margin: 25px 0 15px;
+}
+legend,
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+::placeholder {
+    text-align: end;
+    color: lightgray;
+    font-style: italic;
+}
+.contact-info {
+    display: flex;
+    flex-direction: column;
+}
+input,
+select {
+    margin: 0;
+    padding: 25px;
+    border: 0;
+    border-radius: 6px;
+    background: rgb(243, 243, 243);
+}
+select{
+    /* appearance: none; */
+    font-family: inherit;
+    font-size: inherit;
+    color: lightgray;
+}
+input:focus {
+    border: 2px solid rgb(255, 0, 0);
+}
+.lstchld input {
+    width: 50%;
+    margin-bottom: 25px;
+}
+fieldset:last-child {
+    display: flex;
+    flex-direction: column;
+}
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 20px;
+    width: 1rem;
+    height: 1rem;
+}
+textarea {
+    resize: none;
+    background: rgb(243, 243, 243);
+    width: 100%;
+    height: 9rem;
+    margin: 5px 0 40px;
+    padding: 10px;
+    border: 0;
+    border-radius: 6px;
+}
+button {
+    width: 100%;
+    height: 5.5rem;
+    padding: 0;
+    border: 0;
+    border-radius: 6px;
+    color: #fff;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    background: #52bab3;
+    display: inline-block;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    margin-bottom: 200px;
+    font-size: 1rem;
+    font-weight: 300;
+    font-style: italic;
+    color:rgb(192, 192, 192)
+}
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
+    header,
+    main {
+    max-width: 768px;
+    }
+    .contact-info {
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 10px 0;
+    }
+    .contact-info label {
+        width: 25%;
+        height: inherit;
+    }
+    .contact-info input,
+    .contact-info select {
+        width: 75%;
+        height: inherit;
+    }
+    .lstchld input {
+        width: 33%;
+        margin-right: auto;
+    }
+}

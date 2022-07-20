@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+        <title>The Code Review</title>
+    </head>
+    <body>
+        <div class="container">
+            <nav>
+                <h1>The Code Review</h1>
+            </nav>
+            <header>
+                <div class="header-border">
+                    <h2>Signup for our newsletter</h2>
+                    <p class="header-para">Get the latest news on how your code is doing right in your inbox</p>
+                </div>
+            </header>
+            <main>
+                <form>
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                        <div class="contact-info">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="user_name" placeholder="Required">
+                        </div>
+                        <div class="contact-info">
+                        <label for="email">Email Address</label>
+                        <input type="text" id="email" name="user_email" placeholder="Required">
+                        </div>
+                        <div class="contact-info">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="user_phone" placeholder="Not Required">
+                        </div>
+                        <div class="contact-info">
+                        <label for="address">Street Address</label>
+                        <input type="text" id="address" name="user_address" placeholder="Not Required">
+                        </div>
+                        <div class="contact-info">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="user_city" placeholder="Not Required">
+                        </div>
+                        <div class="contact-info">
+                        <label for="state">State</label>
+                        <select id="state" name="user_state">
+                            <option value="" disabled selected>Choose State</option>
+                            <option value="AK">AK</option>
+                            <option value="AL">AL</option>
+                            <option value="AR">AR</option>
+                            <option value="AZ">AZ</option>
+                            <option value="CA">CA</option>
+                            <option value="CO">CO</option>
+                            <option value="CT">CT</option>
+                            <option value="DC">DC</option>
+                            <option value="DE">DE</option>
+                            <option value="FL">FL</option>
+                            <option value="GA">GA</option>
+                            <option value="HI">HI</option>
+                            <option value="IA">IA</option>
+                            <option value="ID">ID</option>
+                            <option value="IL">IL</option>
+                            <option value="IN">IN</option>
+                            <option value="KS">KS</option>
+                            <option value="KY">KY</option>
+                            <option value="LA">LA</option>
+                            <option value="MA">MA</option>
+                            <option value="MD">MD</option>
+                            <option value="ME">ME</option>
+                            <option value="MI">MI</option>
+                            <option value="MN">MN</option>
+                            <option value="MO">MO</option>
+                            <option value="MS">MS</option>
+                            <option value="MT">MT</option>
+                            <option value="NC">NC</option>
+                            <option value="ND">ND</option>
+                            <option value="NE">NE</option>
+                            <option value="NH">NH</option>
+                            <option value="NJ">NJ</option>
+                            <option value="NM">NM</option>
+                            <option value="NV">NV</option>
+                            <option value="NY">NY</option>
+                            <option value="OH">OH</option>
+                            <option value="OK">OK</option>
+                            <option value="OR">OR</option>
+                            <option value="PA">PA</option>
+                            <option value="RI">RI</option>
+                            <option value="SC">SC</option>
+                            <option value="SD">SD</option>
+                            <option value="TN">TN</option>
+                            <option value="TX">TX</option>
+                            <option value="UT">UT</option>
+                            <option value="VA">VA</option>
+                            <option value="VT">VT</option>
+                            <option value="WA">WA</option>
+                            <option value="WI">WI</option>
+                            <option value="WV">WV</option>
+                            <option value="WY">WY</option>
+                        </select>
+                        </div> <!-- End of State Select Form -->
+                        <div class="contact-info lstchld">
+                        <label for="zip">Zip Code</label>
+                        <input type="text" maxlength="5" id="zip" name="user_zip" placeholder="Not Required">
+                        </div> <!-- End of Contact Information -->
+                    </fieldset>
+                    <fieldset>
+                        <legend>Newsletter</legend>
+                        <label>Select the newsletters you would like to receive</label>
+                        <div>
+                            <input type="checkbox" id="html-news" value="newsletter_html-news" name="user_newsletter"><label class="" for="html-news">HTML News</label><br>
+                            <input type="checkbox" id="css-news" value="newsletter_css-news" name="user_newsletter"><label class="" for="css-news">CSS News</label><br>
+                            <input type="checkbox" id="javascript-news" value="newsletter_javascript-news" name="user_newsletter"><label class="" for="javascript-news">Javascript News</label>
+                        </div> <!-- End of Checkboxes -->
+
+                        <label>Newsletter format</label>
+                        <div>
+                            <input type="radio" id="html" value="newsletter-format_html" name="user_newsletter-format"><label for="html">HTML</label><br>
+                            <input type="radio" id="plain-text" value="neewsletter-format_plain-text" name="user_newsletter-format"><label for="plain-text">Plain text</label>
+                        </div> <!-- End of Radio Buttons -->
+                        <label for="other-topics">Other topics you'd like to hear about</label>
+                        <textarea id="other-topics" name="user_other-topics"></textarea>
+                        <button type="submit">Sign Up</button> <!-- End of Newsletter Section -->
+                    </fieldset>
+                </form>
+            </main>
+            <footer>
+                <p class="copyright">&copy; The Code Review</p>
+            </footer>
+        </div>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
