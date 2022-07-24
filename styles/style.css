@@ -49,8 +49,12 @@ header {
 } */
 
 /* Main Styles */
+main {
+    background: rgb(183, 207, 253);
+    border-radius: 12px;
+}
 fieldset {
-    padding: 0;
+    padding: 15px 15px;
     border: 0;
 }
 fieldset:first-child {
@@ -72,6 +76,9 @@ h2 {
     text-align: end;
     color: lightgray;
     font-style: italic;
+}
+textarea::placeholder {
+    text-align: start;
 }
 .contact-info {
     display: flex;
@@ -117,6 +124,7 @@ textarea {
     padding: 10px;
     border: 0;
     border-radius: 6px;
+    font-family: 'Merriweather', serif;
 }
 button {
     width: 100%;
