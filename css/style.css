@@ -17,51 +17,55 @@ main {
 label,
 p {
     font-weight: 300;
-    color: rgb(125, 125, 125);
+    color: #fff;
+}
+p {
+    color: #8c8c8c;
+    margin: .5rem 0 3rem;
+}
+h2 {
+    margin-bottom: 0;
 }
 
 /* Nav Styles */
 nav {
     margin: 0;
-    padding: 20px 40px;
+    padding: 25px;
     color: #fff;
-    background-color: rgb(46, 46, 65);
+    background-color: rgb(41, 58, 73);
     text-align: center;
 }
 h1 {
     text-transform: uppercase;
+    margin: 0;
 }
 
 /* Header Styles */
 header {
     padding: 13px 0 5px;
     text-align: center;
-    border-bottom: 3px solid rgb(27, 27, 38); 
+    border-bottom: 3px solid rgb(41, 58, 73); 
 }
 .header-border {
-    border-bottom: 7px solid rgb(27, 27, 38);
+    border-bottom: 7px solid rgb(41, 58, 73);
 }
-/* h2 {
-
-}
-.header-para {
-
-} */
 
 /* Main Styles */
 main {
-    background: rgb(183, 207, 253);
+    background: #b5c6d5;
     border-radius: 12px;
+    padding: 10px;
+    margin-top: 25px;
 }
 fieldset {
+    display: flex;
+    flex-direction: column;
     padding: 15px 15px;
     border: 0;
 }
 fieldset:first-child {
     margin: 35px 5px;
-    display: flex;
-    flex-direction: column;
-    border-bottom: 3px solid rgb(27, 27, 38);
+    border-bottom: 3px solid rgb(41, 58, 73);
 }
 fieldset:first-child label,
 fieldset:last-child label {
@@ -71,10 +75,11 @@ legend,
 h2 {
     font-size: 1.5rem;
     font-weight: bold;
+    color: #202d39;
 }
 ::placeholder {
     text-align: end;
-    color: lightgray;
+    color: #bfbfbf;
     font-style: italic;
 }
 textarea::placeholder {
@@ -87,37 +92,42 @@ textarea::placeholder {
 input,
 select {
     margin: 0;
-    padding: 25px;
+    padding: 10px 15px;
+    font-family: inherit;
+    font-size: .8em;
+    color: rgb(27, 27, 38);
+    width: 100%;
+    height: 70px;
     border: 0;
     border-radius: 6px;
-    background: rgb(243, 243, 243);
+    background: #fff;
 }
-select{
-    /* appearance: none; */
-    font-family: inherit;
-    font-size: inherit;
-    color: lightgray;
+select {
+    cursor: pointer;
 }
-input:focus {
-    border: 2px solid rgb(255, 0, 0);
+
+input:focus,
+textarea:focus,
+select:focus {
+    border: 3px solid #52bab3;
 }
 .lstchld input {
     width: 50%;
     margin-bottom: 25px;
 }
 fieldset:last-child {
-    display: flex;
-    flex-direction: column;
+    
 }
 input[type="checkbox"],
 input[type="radio"] {
     margin-right: 20px;
     width: 1rem;
     height: 1rem;
+    cursor: pointer
 }
 textarea {
     resize: none;
-    background: rgb(243, 243, 243);
+    background: #fff;
     width: 100%;
     height: 9rem;
     margin: 5px 0 40px;
@@ -125,6 +135,7 @@ textarea {
     border: 0;
     border-radius: 6px;
     font-family: 'Merriweather', serif;
+    font-size: .8em;
 }
 button {
     width: 100%;
@@ -139,6 +150,13 @@ button {
     line-height: 1.5rem;
     background: #52bab3;
     display: inline-block;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    cursor: pointer;
+}
+button:hover {
+    color: #fff;
+    background: #378983;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23), inset 0 -3px #fff;
 }
 
 /* Footer Styles */
@@ -148,7 +166,10 @@ footer {
     font-size: 1rem;
     font-weight: 300;
     font-style: italic;
-    color:rgb(192, 192, 192)
+    color: #8c8c8c;
+}
+footer p {
+    margin-top: 1.6rem;
 }
 
 /* Media Queries */
@@ -169,10 +190,9 @@ footer {
     .contact-info input,
     .contact-info select {
         width: 75%;
-        height: inherit;
     }
     .lstchld input {
-        width: 33%;
+        width: 25%;
         margin-right: auto;
     }
 }
