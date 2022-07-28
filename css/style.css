@@ -153,7 +153,8 @@ button {
     transition: background .3s ease-in-out;
 
 }
-button:hover {
+button:hover,
+button:focus {
     color: #fff;
     background: #378983;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23), inset 0 -3px #fff;
