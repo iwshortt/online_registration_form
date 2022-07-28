@@ -110,13 +110,11 @@ input:focus,
 textarea:focus,
 select:focus {
     border: 3px solid #52bab3;
+    transition: border .3s ease-out;
 }
 .lstchld input {
     width: 50%;
     margin-bottom: 25px;
-}
-fieldset:last-child {
-    
 }
 input[type="checkbox"],
 input[type="radio"] {
@@ -152,11 +150,20 @@ button {
     display: inline-block;
     text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
     cursor: pointer;
+    transition: background .3s ease-in-out;
+
 }
 button:hover {
     color: #fff;
     background: #378983;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23), inset 0 -3px #fff;
+    transition: background .3s ease-in-out;
+}
+button:active {
+    color: #fff;
+    background: #52bab3;
+    box-shadow: none;
+    transition: .2s ease-out;
 }
 
 /* Footer Styles */
